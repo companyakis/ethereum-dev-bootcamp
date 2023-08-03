@@ -16,12 +16,15 @@ When you want to compare two hashes, first use toHex to turn each hash from a Ui
 So comparing two hashes would look like this:
 
 const a = "apple";
+
 const b = "banana";
 
 const aBytes = utf8ToBytes(a);
+
 const bBytes = utf8ToBytes(b);
 
 const aHash = sha256(aBytes);
+
 const bHash = sha256(bBytes);
 
 console.log(toHex(aHash) === toHex(aHash)); // true
